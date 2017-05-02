@@ -1,7 +1,7 @@
 {
   "variables": {
-    "aws_access_key": "AKIAI5VZNYL5IUJJLT2Q",
-    "aws_secret_key": "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"
+    "aws_access_key": "",
+    "aws_secret_key": ""
   },
   "builders": [{
     "type": "amazon-ebs",
