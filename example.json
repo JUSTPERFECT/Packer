@@ -1,0 +1,16 @@
+{
+  "variables": {
+    "aws_access_key": "AKIAJWZHPACSSNFGRKRQ",
+    "aws_secret_key": "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"
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "ap-northeast-1",
+    "source_ami": "ami-923d12f5",
+    "instance_type": "t2.micro",
+    "ssh_username": "ec2-user",
+    "ami_name": "packer-example {{timestamp}}"
+  }]
+}
